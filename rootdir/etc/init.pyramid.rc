@@ -102,6 +102,10 @@ on post-fs-data
     chown system system /sys/devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-vib/amp
     chmod 0660 /sys/devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-vib/amp
 
+    # Color temp
+    chown system system /sys/module/mdp/parameters/mdp_gamma_cooler_colors
+    chmod 0664 /sys/module/mdp/parameters/mdp_gamma_cooler_colors
+
     # Set indication (checked by vold) that we have finished this action
     setprop vold.post_fs_data_done 1
 

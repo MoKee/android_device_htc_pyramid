@@ -106,6 +106,9 @@ static char *camera_fixup_getparams(int id, const char *settings)
     params.set(android::CameraParameters::KEY_MAX_NUM_DETECTED_FACES_HW, "0");
     params.set(android::CameraParameters::KEY_MAX_NUM_DETECTED_FACES_SW, "0");
     params.set(android::CameraParameters::KEY_FACE_DETECTION, "off");
+    params.set(android::CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED, "false");
+    /* Disable denoise */
+    params.set(android::CameraParameters::KEY_SUPPORTED_DENOISE, "off");
     params.set("scene-detect", "on");
 
     /* Set correct caf-focus-mode */ 
@@ -148,6 +151,9 @@ static char *camera_fixup_setparams(int id, const char *settings)
     params.set(android::CameraParameters::KEY_MAX_NUM_DETECTED_FACES_HW, "0");
     params.set(android::CameraParameters::KEY_MAX_NUM_DETECTED_FACES_SW, "0");
     params.set(android::CameraParameters::KEY_FACE_DETECTION, "off");
+    params.set(android::CameraParameters::KEY_VIDEO_SNAPSHOT_SUPPORTED, "false");
+    /* Disable denoise */
+    params.set(android::CameraParameters::KEY_SUPPORTED_DENOISE, "off");
     params.set("scene-detect", "on");
     
     /* Set correct caf-focus-mode */

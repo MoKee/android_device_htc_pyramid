@@ -17,16 +17,12 @@ persist.sys.usb.config=mtp,adb
 ro.vold.umsdirtyratio=20
 
 # tweaks
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.dexopt-flags=m=y,o=v,u=y
 windowsmgr.max_events_per_sec=300
 hs.systemserver=16m
 hs.app.process=16m
 hs.su=8m
 hs.app_process=16m
-debug.sf.hw=1
 debug.egl.profiler=1
-debug.egl.hw=1
 debug.composition.type=gpu
 hwui.blacklist=0
 persist.sys.ui.hw=1

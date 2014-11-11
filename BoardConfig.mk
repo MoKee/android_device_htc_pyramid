@@ -20,7 +20,7 @@
 # definition file).
 #
 
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := device/htc/pyramid
 
 # Bootloader
 BOARD_VENDOR := htc

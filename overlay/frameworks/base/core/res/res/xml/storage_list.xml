@@ -39,7 +39,6 @@
              android:primary="true"
              android:removable="true"
              android:allowMassStorage="true"
-             android:externalApps="true" />
     <storage android:mountPoint="/storage/usbdisk"
 	     android:storageDescription="@string/storage_usb"
 	     android:removable="true" />

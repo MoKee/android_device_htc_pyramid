@@ -179,6 +179,10 @@ on boot
     # for slate charging timer
     chown radio /sys/class/power_supply/battery/charger_timer
 
+    # Vibrator
+    chown system system /sys/devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-vib/amp
+    chmod 0660 /sys/devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-vib/amp
+
     # for flip to speaker
     chown radio radio /sys/class/htc_accelerometer/accelerometer/PhoneOnOffFlag
     chown radio radio /sys/class/htc_ecompass/ecompass/PhoneOnOffFlag

@@ -14,7 +14,7 @@ wifi.interface=wlan0
 
 # usb
 persist.sys.usb.config=mtp,adb
-ro.vold.umsdirtyratio=20
+ro.vold.umsdirtyratio=50
 
 # tweaks
 windowsmgr.max_events_per_sec=300

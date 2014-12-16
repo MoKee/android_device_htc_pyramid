@@ -43,6 +43,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
     $(LOCAL_PATH)/prebuilt/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh
 
+# Net
+PRODUCT_PACKAGES += \
+    libnetcmdiface \
+    crda
+
 # Wifi
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
 

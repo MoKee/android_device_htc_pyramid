@@ -155,6 +155,10 @@ PRODUCT_PACKAGES += \
     ueventd.pyramid.rc \
     gps.pyramid
 
+# FM
+PRODUCT_PACKAGES += \
+    FM \
+    libfmjni
 
 # Wifi
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)

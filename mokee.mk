@@ -6,15 +6,15 @@ TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
 TARGET_BOOTANIMATION_HALF_RES := true
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common MK stuff.
+$(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/pyramid/device_pyramid.mk)
 
 # Device naming
 PRODUCT_DEVICE := pyramid
-PRODUCT_NAME := cm_pyramid
+PRODUCT_NAME := mk_pyramid
 PRODUCT_BRAND := htc
 PRODUCT_MODEL := Sensation
 PRODUCT_MANUFACTURER := HTC

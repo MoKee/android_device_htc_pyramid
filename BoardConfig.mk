@@ -138,7 +138,7 @@ BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 -include device/htc/pyramid/bcmdhd.mk
 
 # Hardware tunables
-BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/mkhw
 
 # RIL
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril

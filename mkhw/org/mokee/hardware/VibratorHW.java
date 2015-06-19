@@ -13,8 +13,8 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package org.cyanogenmod.hardware;
-import org.cyanogenmod.hardware.util.FileUtils;
+package org.mokee.hardware;
+import org.mokee.hardware.util.FileUtils;
 import java.io.File;
 public class VibratorHW {
 private static String LEVEL_PATH = "/sys/class/timed_output/vibrator/voltage_level";
